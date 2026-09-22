@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps & Cloud Engineer Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-size: 1.25rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .contact-links a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .skill-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .skill-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-item {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .job-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    .company {
+      color: var(--accent);
+    }
+
+    .date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    ul {
+      list-style-position: inside;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cert-list {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      background-color: var(--card-bg);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <h1>Alex Mercer</h1>
+      <div class="title">Senior DevOps & Cloud Infrastructure Engineer (6+ Years Exp)</div>
+      <div class="contact-links">
+        <a href="mailto:alex.mercer@email.com">alex.mercer@email.com</a>
+        <a href="https://linkedin.com/in/example" target="_blank">LinkedIn</a>
+        <a href="https://github.com/example" target="_blank">GitHub</a>
+        <span>Location: Remote / US</span>
+      </div>
+    </header>
+
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <p style="color: var(--text-muted);">
+        Senior DevOps Engineer with 6 years of experience designing, automating, and maintaining cloud infrastructure across AWS and Multi-Cloud environments. Proven track record in orchestrating microservices with Kubernetes, implementing Infrastructure as Code (IaC) via Terraform, and building scalable CI/CD pipelines to improve release velocity and operational reliability.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Cloud Platforms</h3>
+          <p>AWS (EC2, EKS, S3, CloudFront, VPC, IAM), GCP, Hybrid-Cloud</p>
+        </div>
+        <div class="skill-card">
+          <h3>IaC & Config Management</h3>
+          <p>Terraform, CloudFormation, Ansible, Packer</p>
+        </div>
+        <div class="skill-card">
+          <h3>Containerization & K8s</h3>
+          <p>Docker, Kubernetes, EKS, Helm, ArgoCD, Istio Service Mesh</p>
+        </div>
+        <div class="skill-card">
+          <h3>CI/CD Pipelines</h3>
+          <p>GitHub Actions, GitLab CI, Jenkins, Spinnaker</p>
+        </div>
+        <div class="skill-card">
+          <h3>Observability & Logs</h3>
+          <p>Prometheus, Grafana, Datadog, ELK Stack, AWS CloudWatch</p>
+        </div>
+        <div class="skill-card">
+          <h3>Scripting & Security</h3>
+          <p>Python, Bash, Go, HashiCorp Vault, SonarQube, Trivy</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Senior DevOps Engineer</div>
+            <div class="company">CloudScale Systems Inc.</div>
+          </div>
+          <div class="date">2023 - Present</div>
+        </div>
+        <ul>
+          <li>Architected and deployed multi-region AWS EKS clusters serving 5M+ daily active users using Terraform and Helm.</li>
+          <li>Reduced deployment times by 65% by migrating legacy Jenkins jobs to GitHub Actions and implementing GitOps with ArgoCD.</li>
+          <li>Engineered automated cost-optimization strategies using Spot Instances and Karpenter, reducing annual cloud compute spend by $120k.</li>
+          <li>Led the implementation of HashiCorp Vault for secrets management and strict IAM least-privilege policies.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">DevOps / Infrastructure Engineer</div>
+            <div class="company">DataFlow Technologies</div>
+          </div>
+          <div class="date">2020 - 2023</div>
+        </div>
+        <ul>
+          <li>Provisioned end-to-end production environments on AWS using modular Terraform scripts and Ansible playbooks.</li>
+          <li>Built comprehensive monitoring and alerting systems with Prometheus and Grafana, lowering MTTR by 40%.</li>
+          <li>Managed automated container vulnerability scanning using Trivy integrated directly into GitLab CI pipelines.</li>
+          <li>Supported 15+ software development teams to standardize Dockerfile optimization and environment isolation.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="job-header">
+          <div>
+            <div class="job-title">Junior Systems / Cloud Administrator</div>
+            <div class="company">Nexus Cloud Solutions</div>
+          </div>
+          <div class="date">2018 - 2020</div>
+        </div>
+        <ul>
+          <li>Automated routine Linux system administration and maintenance tasks using Bash and Python scripts.</li>
+          <li>Assisted in migrating legacy on-premise workloads to AWS EC2 and S3 infrastructure.</li>
+          <li>Maintained SSL/TLS certificate renewals, DNS management via Route53, and firewall rules.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <span class="badge">AWS Certified Solutions Architect – Professional</span>
+        <span class="badge">Certified Kubernetes Administrator (CKA)</span>
+        <span class="badge">HashiCorp Certified: Terraform Associate</span>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>

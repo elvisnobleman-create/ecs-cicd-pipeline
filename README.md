@@ -1,1 +1,0 @@
-# ecs-cicd-pipeline
